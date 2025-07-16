@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: calorie-tracker-cronjob
+    environment:
+      - MONGODB_URI=
+      - DB_NAME=
+    networks:
+      - db-network
+    volumes:
+      - .:/app
+    command: ["node", "main.js"]
+
+networks:
+  db-network:
+    external: true
