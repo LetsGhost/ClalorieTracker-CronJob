@@ -12,12 +12,13 @@ async function main() {
   }
 }
 
-// Schedule the cron job to run every 5 seconds
+// Schedule the cron job to run every 5 seconds, for testing :)
 cron.schedule('*/5 * * * * *', async () => {
   console.log('Running cron job every 5 seconds');
   await main();
 });
 
+// Uncomment this for production
 /*
 cron.schedule('0 12 * * *', async () => {
   console.log('Running cron job at 12:00 PM every day');
