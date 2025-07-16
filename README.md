@@ -8,7 +8,7 @@
 
 ## Prerequisites
 
-- Node.js (v16 or higher)
+- Node.js (v20 or higher)
 - MongoDB instance running locally or remotely
 
 ## Installation

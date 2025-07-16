@@ -1,5 +1,5 @@
-import { closeConnection } from './dbHelper.js';
-import { processOldDiaries } from './processOldDiarys.js';
+import { closeConnection } from '../dbHelper.js';
+import { processOldDiaries } from './scripts/processOldDiarys.js';
 import cron from 'node-cron';
 
 async function main() {
